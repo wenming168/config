@@ -1,0 +1,20 @@
+server:
+  port: 8761
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 120.77.240.141
+          defaultBrokerPort: 9092
+          zkNodes: 120.77.240.141
+          defaultZkPort: 2181
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
